@@ -1,0 +1,4 @@
+git init ->initialization of local git repository
+git add <filename> ->add the specific
+git status -> show the status of all the files in the current directory
+git branch <branchname> -> create a branch
