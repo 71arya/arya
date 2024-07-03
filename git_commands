@@ -1,4 +1,62 @@
-git init ->initialization of local git repository
-git add <filename> ->add the specific
-git status -> show the status of all the files in the current directory
-git branch <branchname> -> create a branch
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Area in Input Tag</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "content sidebar"
+      "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    height: 300px;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 10px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
+  .content {
+    grid-area: content;
+    background-color: lightcoral;
+    padding: 10px;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    grid-area: input;
+    padding: 10px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Content</div>
+  <div class="footer">Footer</div>
+  <input type="text" placeholder="Enter your text" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .mainDiv
+       {
+        background-color: aquamarine;
+        display: grid;
+       
+        gap: 20px 30px;
+        grid-template-areas:
+        "rd ji gd"
+        "tt eg gd "
+         ;
+       }
+       @media screen and (min-width:320px) and (max-width:425px){
+ .mainDiv
+ {
+    background-color: blueviolet;
+    grid-template-areas:
+        "rd ji gd"
+        "tt eg gd "
+         ;
+ }
+       }
+       @media screen and (min-width:320px) and (max-width:425px){
+ .mainDiv
+ {
+    background-color: rgb(226, 43, 153);
+    grid-template-areas:
+        "rd ji gd"
+        "tt eg gd "
+         ;
+ }
+       }
+       @media screen and (min-width:120px) and (max-width:400px){
+ .mainDiv
+ {
+    background-color: rgb(84, 20, 145);
+    grid-template-areas:
+        "rd ji gd"
+        "tt eg gd "
+         ;
+ }
+       }
+    </style>
+</head>
+<body>
+    <div class="mainDiv" style="border: 2px solid beige;">
+      <div style="background-color: aquamarine; grid-area: rd;">
+        <input type="button" name="" value="9">
+      </div>
+      <div style="background-color: rgb(37, 57, 234); grid-area: gd;;">
+        <input type="button" name="" value="9">
+      </div>
+      <div style="background-color: rgb(177, 105, 32); grid-area:eg;">
+        <input type="button" name="" value="9">
+      </div>
+      <div style="background-color: rgb(8, 7, 16); grid-area: tt;">
+        <input type="button" name="" value="9">
+      </div>
+      <div style="background-color: rgb(159, 198, 67); grid-area: gy;">
+        <input type="button" name="" value="9">
+      </div>
+      <div style="background-color: rgb(178, 31, 195); grid-area: ax;"> <input type="button" name="" value="9">
+    </div>
+      
+      <a href="w2_2.html" target="_blank">click</a>
+    </div>
+</body>
+</html>
