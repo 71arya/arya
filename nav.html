@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:url(./form.avif);
+      /* background-size: cover; */
+      /* background-position: center; */
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .menubar
+    {
+        background-color: blanchedalmond;
+        text-align: center;
+    }
+    .menubar ul{
+        display: inline-flex;
+        list-style: none;
+        color:black;
+    }
+    .menubar ul li{
+        width: 120px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .menubar ul li a
+    {
+    text-decoration: none;
+    color: #000;
+    }
+    .active,  .menubar ul:hover
+    {
+        background: #000;
+        border-radius: 3px;
+    }
+</style>
+<body>
+<div class="menubar">
+    <ul class="menubar">
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">about us</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">signup</a></li>
+        <li><a href="#">login</li>
+    </ul>
+</div>
+</body>
+</html>

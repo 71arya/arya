@@ -60,3 +60,225 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head" id="heading">Headings</h1>
+    <h1 class="head">Headings1</h1>
+    <h1 class="head">Headings2</h1>
+    <h1 class="head">Headings3</h1>
+    <h1 class="head">Headings4</h1>
+    <input  id="imp" type="text" value="hey" placeholder="name">
+    <button onclick="fun()">click</button>
+</body>
+</html>
+<script>function fun()
+{
+    let x=document.querySelector("#imp")
+    let y=document.querySelectorAll(".head")
+    y[3].innerHTML =x.value
+    console.log(x.value);
+}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head" id="heading">Headings</h1>
+    <h1 class="head">Headings1</h1>
+    <h1 class="head">Headings2</h1>
+    <h1 class="head">Headings3</h1>
+    <h1 class="head">Headings4</h1>
+    <input  id="imp" type="text" value="hey" placeholder="name">
+    <button onclick="fun()">click</button>
+</body>
+</html>
+<script>function fun()
+{
+    let x=document.querySelector("#imp")
+    let y=document.querySelectorAll(".head")
+    y[3].innerHTML =x.value
+    console.log(x.value);
+}
+let x=document.createElement("h1")
+    x.innerText="heading";
+    x.style.color="red"
+    x.style.border="1px soild red"
+ x.style.backgroundColor="yellow"
+ x.setAttribute("id","head");
+ x.setAttribute("class","heading")
+    let imp=document.createElement("input");
+    let body=document.querySelector("body")
+    body.append(x,imp);
+
+</script> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+<script>
+//       let x=document.createElement("h1")
+//     x.innerText="heading";
+//     x.style.color="red"
+//     x.style.border="1px soild red"
+//  x.style.backgroundColor="yellow"
+//  x.setAttribute("id","head");
+//  x.setAttribute("class","heading")
+//     let imp=document.createElement("input");
+//     let body=document.querySelector("body")
+//     body.append(x,imp);
+let arr=[];
+function push()
+{
+ arr.push(imp.value)
+ console.log(arr)
+}
+let body =document.querySelector("body")
+
+let imp = document.createElement("input")
+imp.setAttribute("id","x1")
+imp.setAttribute("class","x")
+imp.style.border = "1px solid red"
+
+let i2 = document.createElement("input")
+i2.setAttribute("id","x1")
+i2.setAttribute("class","x")
+
+let btn= document.createElement("button")
+btn.innerText = "Click"
+btn.addEventListener("click",push)
+
+body.append(imp,btn,i2)
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+<script>
+//       let x=document.createElement("h1")
+//     x.innerText="heading";
+//     x.style.color="red"
+//     x.style.border="1px soild red"
+//  x.style.backgroundColor="yellow"
+//  x.setAttribute("id","head");
+//  x.setAttribute("class","heading")
+//     let imp=document.createElement("input");
+//     let body=document.querySelector("body")
+//     body.append(x,imp);
+let arr=[];
+function push()
+{
+ arr.push(imp.value)
+ console.log(arr)
+ display();
+}
+function display()
+{
+    div.innerHTML=""; 
+for (let i = 0; i < arr.length; i++) {
+   
+    let head=document.createElement("h1")
+    head.innerText=arr[i];
+    div.append(head)
+    
+}
+}
+let body =document.querySelector("body")
+
+let imp = document.createElement("input")
+let div=document.createElement("div")
+imp.setAttribute("id","x1")
+imp.setAttribute("class","x")
+imp.style.border = "1px solid red"
+
+let btn= document.createElement("button")
+btn.innerText = "Click"
+btn.addEventListener("click",push)
+
+body.append(imp,btn,div)
+
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+<script>
+//       let x=document.createElement("h1")
+//     x.innerText="heading";
+//     x.style.color="red"
+//     x.style.border="1px soild red"
+//  x.style.backgroundColor="yellow"
+//  x.setAttribute("id","head");
+//  x.setAttribute("class","heading")
+//     let imp=document.createElement("input");
+//     let body=document.querySelector("body")
+//     body.append(x,imp);
+let arr=[];
+function push()
+{
+ arr.push(imp.value);
+ console.log(arr);
+ display();
+}
+function display()
+{
+        
+    let head=document.createElement("h1")
+    head.innerHTML = arr[arr.length-1];
+    body.append(head);
+}
+
+let body =document.querySelector("body")
+
+let imp = document.createElement("input")
+imp.setAttribute("id","x1")
+imp.setAttribute("class","x")
+imp.style.border = "1px solid red"
+
+let btn= document.createElement("button")
+btn.innerText = "Click"
+btn.addEventListener("click",push)
+
+body.append(imp,btn)
+
+</script>
